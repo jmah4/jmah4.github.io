@@ -1,23 +1,61 @@
-I will add pictures later, but my non-work related projects include: <br>
+Some of my non-work related projects include: <br>
 
 <b>Hard Hat</b>
 
-<p>One of the time honoured Frosh Week traditions is Hard Hat decoration, which usually consists of painting it, putting stickers on it, etc. My Hard Hat decoration was to add a giant screen on the front, onto which people can leave messages. Users scan the QR code on the sides, which leads them to a Google Form where they can type in whatever they want. The input to the form then gets sent to be displayed on a website, which is being displayed by the Hard Hat's screen.</p>
+<p>One of the time honoured Frosh Week traditions is Hard Hat decoration, which usually consists of painting it, putting stickers on it, etc. 
+ My Hard Hat decoration, in collaboration with <a href="https://www.nanik.ca/projects">Nanik</a> was to add a giant screen on the front, 
+ onto which people can leave messages. 
+  
+ Users do this by scanning the QR code taped on the sides, which leads them to a Google Form where they can type in whatever they want. 
+ The input to the form then gets sent to be displayed on a website, which is being displayed by the Hard Hat's screen. <br>
 
-<img src="hat1.png"/>
-<img src="doom_hat.png"/>
+ Nanik did all the hardware (setting up the screen, hiding the Raspberry Pi inside a cleverly 3D printed box) and I did the software, which consisted of 
+ setting up a Google Script to update a Github Pages <a href="https://jmah4.github.io/hard-hat.github.io/">site</a> every time someone filled out the form.
+</p>
 
-<p>Skills learned: Google scripts, Github websites, why maybe it's not a good idea to let strangers decide what to write on your forehead (which you can't see by the way, so a lot of stuff goes unnoticed until people start looking at you funny)
+<img src="hat1.png" width="500"/>
 
+<br> And then I got the hardhat to run Doom and took it around SUDS and let people play it.
+<img src="doom_hat.png" width="500"/>
+
+<p>Skills learned: Google scripts, Github websites, why maybe it's not a good idea to let strangers decide what to write on your forehead
+ (which you can't see by the way, so a lot of stuff goes unnoticed until people start pointing and laughing at you)</p>
+
+<br>
+<br>
 
 <b>Electric Accordion</b>
 
-<p>My lab partner for an embedded software course I was taking had an extra toy accordion just lying around (who doesn't), so we decided that for the final project of the course, we'd rip out the reeds and "electrify" it (again, who wouldn't.) We added copper tape on the backside of each button on the accordion, and added metal contacts on the side where the holes were, creating a circuit when one of the buttons was pressed. Then, each of these switches was mapped to an input on an STM32 Nucleo dev board, which we programmed to send a note with a desired frequency that depended on which button was pressed to an amp jack. We were then able to plug a guitar amplifier into the accordian, and play it like a normal accordion. </p>
+<p>My lab partner for an embedded software course I was taking (<a href="https://www.nanik.ca/projects"Nanik</a>) had an extra toy accordion 
+ just lying around (who doesn't), so we decided that for the final project of the course, we'd rip out the reeds 
+ and "electrify" it (again, who wouldn't.) We added copper tape on the backside of each button on the accordion, 
+ and added metal contacts on the side where the holes were, creating a circuit when one of the buttons was pressed. 
+ Then, each of these switches was mapped to an input on an STM32 Nucleo dev board, which we programmed to send a note 
+  with a desired frequency that depended on which button was pressed to an amp jack. We were then able to plug a guitar amplifier into the accordian, 
+  and play it like a normal accordion. </p>
+<br>
+<p>Nanik handled the hardware (figuring out the physicla design of the accordion, soldering most of the keys, adding the light-senstivie resistor inside the accordion s/t/ it would only play when 
+  expanded and contracted). My job was to take the physical accordion, and how to make it such that the STM32 was able to play the right notes when the right key was
+  pressed. </p>
 
-<p> Skills learned: soldering, embedded software design, how to play the accordion</p>
+<br>
+
+<img src="accordion.png" width="500"/> 
+
+<p> Skills learned: soldering, embedded software design (e.g., fundementals of how DAC/ADCs work, interrupts), how to play the accordion</p>
 
 <b>Emergency Shelter Map</b>
 
-<p>The goal of ECE297 (Software Design) is to create a program to visualize geographical data from OpenStreetMap using C++ and the GTK library. In addition to following best graphic design practices and optimizing the map for fast rendering speed, I also took data from the City of Toronto's emergency shelter list, and displayed all the locations of emergency shelters in Toronto with their current occupancy.</p>
+<p>The goal of ECE297 (Software Design) is to create a program to visualize geographical data from OpenStreetMap using C++ and the GTK library (so a map.)
+  In addition to following best graphic design practices and optimizing the map for fast rendering speed, I also took data from the City of 
+  Toronto's emergency shelter list, and displayed all the locations of emergency shelters in Toronto with their current occupancy.</p>
 
-<p> Skills learned: data structures, software design, how to speed up programs, the sad state of Toronto's emergency shelter system
+<br>
+
+<p> The project is typically done in groups of three, but due to unfortunate circumstances, the other two members of my group were unable to complete the project,
+  so the majority of the map was developed by me. </p>
+
+<img src="map1.png" width="500"/>
+<img src="zoomed_in_map.png" width="500"/>
+
+<p> Skills learned: data structures, software design, how to speed up programs, the sad state of Toronto's emergency shelter system</p>
